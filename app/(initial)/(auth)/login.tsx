@@ -33,7 +33,10 @@ const Login = () => {
           <Text style={styles.label}>Password</Text>
           <TextInput style={styles.input} />
         </View>
-        <TouchableOpacity style={styles.submit}>
+        <TouchableOpacity
+          style={styles.submit}
+          onPress={() => router.push("home")}
+        >
           <Text style={{ fontWeight: "600" }}>LOGIN</Text>
         </TouchableOpacity>
       </View>
